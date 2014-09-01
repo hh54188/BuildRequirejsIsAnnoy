@@ -30,10 +30,16 @@
 
 	那么r.js默认就会去src目录下面找main.js当然也找不到，还是会报错
 
+	**main和它的依赖必须要在一个文件夹中吗？
+
  */
 ({
-    // baseUrl: './', // Default 
-    name: "../main",
-    out: "main-built.js",
-    mainConfigFile: './config.js'
+	// 顺序有没有影响？
+    mainConfigFile: './config.js',
+    paths: {
+    	"main": '../main'
+    },
+    name: "main",
+    out: "main-built.js"
+    
 })
