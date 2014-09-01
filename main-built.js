@@ -1,0 +1,1 @@
+define("util/cookie",[],function(){return{name:"cookie"}}),define("src/foo",["../util/cookie"],function(e){return{name:"foo"}}),define("util/browser",[],function(){return{name:"browser"}}),define("src/bar",["../util/browser"],function(e){return{name:"bar"}}),require(["./src/foo","./src/bar"],function(e,t){}),define("main",function(){});
