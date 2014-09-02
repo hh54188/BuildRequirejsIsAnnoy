@@ -34,11 +34,12 @@
 
  */
 ({
-	// 顺序有没有影响？
+	// 顺序是没有影响的
     mainConfigFile: './config.js',
     paths: {
-    	"main": '../main'
-    },
+    	"main": '../main',// 比如进行指定，否则它会去config.js中配置的baseUrl进行main.js进行查找
+    	"config": '../config'
+    },	
     name: "main",
     out: "main-built.js"
     
