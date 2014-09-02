@@ -26,6 +26,8 @@ require(["./foo", "./bar", "jQuery"], function (Foo, Bar, $) {
 
 	// 下面的这种加载方式需要注意
 	// 虽然访问这个页面是第一次就能加载
+	// （但如果放在一个点击事件中body.onclick，
+	// 则第一次都不会被加载，require是怎么做到判断的）？
 	// 但是在打包是是会被忽略的
 	// 这也否定了下下的config方法
 	require(["./baz"], function (Baz) {
