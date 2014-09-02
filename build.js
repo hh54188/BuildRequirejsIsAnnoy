@@ -2,7 +2,9 @@
 
 	requirejs的打包过程简直就是一个坑：
 	举例1：
-	如果main.js和其他的文件不在同一个目录的话：
+	如果main.js和其他的文件不在同一个目录的话(*但注意，大多数情况下, main.js应该
+	是和其他js文件放在同一个目录中的*)：
+
 
 	Project:
 	|--build.js
@@ -41,6 +43,5 @@
     	"config": '../config'
     },
     name: "main",
-    out: "main-built.js"
-    
+    out: "main-built.js" // 注意：out与dir,modules等参数不兼容，out主要用于单个元素的合并
 })
