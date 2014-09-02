@@ -39,7 +39,7 @@
     paths: {
     	"main": '../main',// 比如进行指定，否则它会去config.js中配置的baseUrl进行main.js进行查找
     	"config": '../config'
-    },	
+    },
     name: "main",
     out: "main-built.js"
     

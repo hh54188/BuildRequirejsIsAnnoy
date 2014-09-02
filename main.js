@@ -28,6 +28,7 @@
 
 // 方法二：把config.js作为模块进行require
 // 但是这么做的话打包的时候就没有办法打包其他模块(foo, bar, jQuery)了
+// 这是为什么？
 require(["./config"], function () {
 	require(["./foo", "./bar", "jQuery"], function (Foo, Bar, $) {
 
